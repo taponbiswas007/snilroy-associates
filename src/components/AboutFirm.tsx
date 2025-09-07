@@ -67,17 +67,17 @@ const AboutFirm = () => {
             </h2>
 
             <p className="text-blue-200 mb-6 leading-relaxed">
-              S Nil Roy & Associates was established in 2015 with a commitment
+              {`S Nil Roy & Associates was established in 2015 with a commitment
               to providing exceptional legal services with integrity, expertise,
-              and personalized attention to each client's unique needs.
+              and personalized attention to each client's unique needs.`}
             </p>
 
             <p className="text-gray-300 mb-8 leading-relaxed">
-              Led by Adv. Sree Nilmadhob Roy, LLB (Hon's), LLM, our firm brings
+              {`Led by Adv. Sree Nilmadhob Roy, LLB (Hon's), LLM, our firm brings
               together extensive legal knowledge and practical experience to
               deliver effective solutions for our clients' most complex legal
               challenges. We believe in building long-term relationships based
-              on trust and successful outcomes.
+              on trust and successful outcomes.`}
             </p>
 
             {/* Stats */}

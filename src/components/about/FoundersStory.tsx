@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import Image from "next/image";
 const FoundersStory = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -54,7 +54,7 @@ const FoundersStory = () => {
                 <div className="absolute inset-0 bg-gray-800 flex items-center justify-center p-8">
                   <div className="text-center">
                     <div className="w-32 h-32 rounded-full bg-amber-500/10 border-2 border-amber-500/30 flex items-center justify-center mx-auto mb-6">
-                      <img
+                      <Image
                         src="/owner.webp"
                         alt="Adv. Sree Nilmadhob Roy Portrait"
                         className="w-28 h-28 rounded-full object-cover"
@@ -63,7 +63,7 @@ const FoundersStory = () => {
                     <h3 className="text-2xl font-serif text-white italic mb-2">
                       Adv. Sree Nilmadhob Roy
                     </h3>
-                    <p className="text-blue-300">LLB (Hon's), LLM</p>
+                    <p className="text-blue-300">{`LLB (Hon's), LLM`}</p>
                     <div className="w-16 h-0.5 bg-amber-400 mx-auto my-4"></div>
                     <p className="text-amber-400 text-sm">Founding Partner</p>
                   </div>
@@ -83,7 +83,7 @@ const FoundersStory = () => {
             <div className="mb-12">
               <div className="inline-flex items-center justify-center px-6 py-2 bg-amber-500/10 border border-amber-500/30 rounded-full mb-6 backdrop-blur-sm">
                 <span className="text-amber-400 text-sm font-light tracking-wider">
-                  THE FOUNDER'S JOURNEY
+                  {` THE FOUNDER'S JOURNEY`}
                 </span>
               </div>
               <h2 className="text-4xl md:text-5xl font-light text-white mb-6">
@@ -161,7 +161,7 @@ const FoundersStory = () => {
               </div>
               <div>
                 <p className="text-white font-serif italic">
-                  "Justice is not just a profession, it's a passion."
+                  {`"Justice is not just a profession, it's a passion."`}
                 </p>
                 <p className="text-amber-400 text-sm">
                   - Adv. Sree Nilmadhob Roy

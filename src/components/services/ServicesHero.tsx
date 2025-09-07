@@ -1,8 +1,21 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 
 const ServicesHero = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [currentService, setCurrentService] = useState(0);
+
+  // Use useMemo to memoize the services array so it doesn't change on every render
+  const services = useMemo(
+    () => [
+      "Corporate Law",
+      "Criminal Defense",
+      "Family Law",
+      "Real Estate Law",
+      "Intellectual Property",
+      "Civil Litigation",
+    ],
+    []
+  );
 
   useEffect(() => {
     setIsVisible(true);
@@ -13,16 +26,7 @@ const ServicesHero = () => {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, []);
-
-  const services = [
-    "Corporate Law",
-    "Criminal Defense",
-    "Family Law",
-    "Real Estate Law",
-    "Intellectual Property",
-    "Civil Litigation",
-  ];
+  }, [services.length]); // Now we can safely include services.length in dependencies
 
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-900 overflow-hidden pt-20">

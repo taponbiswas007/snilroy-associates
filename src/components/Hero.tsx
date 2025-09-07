@@ -46,7 +46,7 @@ const Hero = () => {
               <h2 className="text-xl md:text-2xl text-blue-300 font-light mb-4">
                 Adv. Sree Nilmadhob Roy
               </h2>
-              <p className="text-gray-300 text-lg mb-6">LLB (Hon's), LLM</p>
+              <p className="text-gray-300 text-lg mb-6">{`LLB (Hon's), LLM`}</p>
               <p className="text-gray-400 max-w-md mx-auto md:mx-0">
                 Providing expert legal counsel and representation since 2015.
                 Your trusted partner for navigating complex legal challenges.

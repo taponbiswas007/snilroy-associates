@@ -90,8 +90,8 @@ const ClientSuccess = () => {
             </span>
           </h2>
           <p className="text-xl text-blue-200 max-w-2xl mx-auto leading-relaxed">
-            Discover how we've helped clients achieve successful outcomes in
-            complex legal matters.
+            {`  Discover how we've helped clients achieve successful outcomes in
+            complex legal matters.`}
           </p>
         </div>
 
@@ -244,7 +244,7 @@ const ClientSuccess = () => {
               {/* Client Testimonial */}
               <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-6">
                 <div className="flex items-start mb-4">
-                  <div className="text-amber-400 text-2xl mr-2">"</div>
+                  <div className="text-amber-400 text-2xl mr-2">{`"`}</div>
                   <p className="text-white italic leading-relaxed">
                     S Nil Roy & Associates provided exceptional guidance
                     throughout our complex case. Their expertise and dedication

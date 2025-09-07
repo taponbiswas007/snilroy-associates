@@ -251,7 +251,7 @@ const ConsultationCTA = () => {
                     Thank You!
                   </h4>
                   <p className="text-blue-200">
-                    We've received your message and will contact you shortly.
+                    {`  We've received your message and will contact you shortly.`}
                   </p>
                 </div>
               ) : (

@@ -44,8 +44,8 @@ const AboutCTA = () => {
             </span>
           </h2>
           <p className="text-xl text-blue-200 max-w-2xl mx-auto leading-relaxed">
-            Now that you've learned about our expertise and success stories,
-            let's discuss how we can help with your legal needs.
+            {`Now that you've learned about our expertise and success stories,
+            let's discuss how we can help with your legal needs.`}
           </p>
         </div>
 
@@ -190,8 +190,8 @@ const AboutCTA = () => {
                     Thank You!
                   </h4>
                   <p className="text-blue-200">
-                    We'll contact you within 24 hours to schedule your
-                    consultation.
+                    {`We'll contact you within 24 hours to schedule your
+                    consultation.`}
                   </p>
                 </div>
               ) : (

@@ -96,8 +96,8 @@ const PracticeAreas = () => {
         {/* Call to Action */}
         <div className="text-center mt-16">
           <p className="text-blue-200 mb-6">
-            Don't see your specific legal need listed? Contact us to discuss how
-            we can help.
+            {` Don't see your specific legal need listed? Contact us to discuss how
+            we can help.`}
           </p>
           <button className="bg-amber-500 hover:bg-amber-600 text-gray-900 font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-amber-500/30">
             Schedule a Consultation

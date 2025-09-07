@@ -191,11 +191,11 @@ const ValuesPhilosophy = () => {
 
                 <div className="space-y-6">
                   <p className="text-lg text-blue-200 leading-relaxed">
-                    We believe that exceptional legal service goes beyond
+                    {` We believe that exceptional legal service goes beyond
                     technical expertise. It requires a deep understanding of our
                     clients' needs, a commitment to their success, and the
                     wisdom to navigate complex legal challenges with clarity and
-                    purpose.
+                    purpose.`}
                   </p>
 
                   <p className="text-lg text-gray-300 leading-relaxed">
@@ -217,7 +217,7 @@ const ValuesPhilosophy = () => {
                 {/* Highlighted quote */}
                 <div className="mt-12 p-6 bg-amber-500/10 border border-amber-500/20 rounded-xl">
                   <div className="flex items-start">
-                    <div className="text-amber-400 mr-4 text-2xl">"</div>
+                    <div className="text-amber-400 mr-4 text-2xl">{`"`}</div>
                     <div>
                       <p className="text-white font-serif italic text-lg">
                         True legal excellence is measured not just by cases won,
@@ -227,7 +227,7 @@ const ValuesPhilosophy = () => {
                       <div className="w-16 h-0.5 bg-amber-400 my-4"></div>
                       <p className="text-amber-400">Adv. Sree Nilmadhob Roy</p>
                     </div>
-                    <div className="text-amber-400 ml-4 text-2xl">"</div>
+                    <div className="text-amber-400 ml-4 text-2xl">{`"`}</div>
                   </div>
                 </div>
               </div>
