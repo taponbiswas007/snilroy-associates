@@ -50,6 +50,7 @@ const AboutFirm = () => {
                   alt="S Nil Roy & Associates Law Firm"
                   layout="fill"
                   objectFit="cover"
+                  className="w-full h-full"
                 />
               </div>
             </div>
