@@ -54,11 +54,15 @@ const FoundersStory = () => {
                 <div className="absolute inset-0 bg-gray-800 flex items-center justify-center p-8">
                   <div className="text-center">
                     <div className="w-32 h-32 rounded-full bg-amber-500/10 border-2 border-amber-500/30 flex items-center justify-center mx-auto mb-6">
-                      <Image
-                        src="/owner.webp"
-                        alt="Adv. Sree Nilmadhob Roy Portrait"
-                        className="w-28 h-28 rounded-full object-cover"
-                      />
+                      {
+                        <Image
+                          src="/owner.webp"
+                          alt="Adv. Sree Nilmadhob Roy Portrait"
+                          className="w-28 h-28 rounded-full object-cover"
+                          width={112}
+                          height={112}
+                        />
+                      }
                     </div>
                     <h3 className="text-2xl font-serif text-white italic mb-2">
                       Adv. Sree Nilmadhob Roy

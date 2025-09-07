@@ -49,8 +49,7 @@ const AboutFirm = () => {
                   src="/owner.webp"
                   alt="S Nil Roy & Associates Law Firm"
                   layout="fill"
-                  objectFit="cover"
-                  className="w-full h-full"
+                  objectFit="fill"
                 />
               </div>
             </div>
