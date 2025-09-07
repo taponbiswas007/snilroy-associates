@@ -24,7 +24,8 @@ const Navbar = () => {
   }, [mobileMenuOpen]);
 
   return (
-    <nav className="container mx-auto px-4 py-4 bg-black border-b border-yellow-400 sticky top-0 z-50">
+   <div className="bg-black border-b border-yellow-400 sticky top-0 z-50">
+     <nav className="container mx-auto px-4 py-4">
       <div className="flex justify-between items-center">
         {/* Logo with bright gold */}
         <Link href="/" aria-label="Go to home">
@@ -146,6 +147,7 @@ const Navbar = () => {
         )}
       </AnimatePresence>
     </nav>
+   </div>
   );
 };
 
