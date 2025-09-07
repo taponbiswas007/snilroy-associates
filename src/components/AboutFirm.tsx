@@ -32,7 +32,7 @@ const AboutFirm = () => {
           }`}
         >
           {/* Image/Placeholder */}
-          <div className="lg:w-1/2 relative">
+          <div className="lg:w-1/2 w-full relative">
             <div className="relative h-96 w-full rounded-lg overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-900 to-black flex items-center justify-center">
                 <div className="text-center p-8">

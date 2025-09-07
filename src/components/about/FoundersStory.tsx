@@ -47,7 +47,7 @@ const FoundersStory = () => {
           }`}
         >
           {/* Image/Portrait Section */}
-          <div className="lg:w-2/5">
+          <div className="lg:w-2/5 w-full">
             <div className="relative group">
               {/* Main portrait container */}
               <div className="relative z-10 h-96 w-full bg-gradient-to-br from-amber-400/20 to-blue-600/20 rounded-2xl overflow-hidden border border-amber-500/30">
