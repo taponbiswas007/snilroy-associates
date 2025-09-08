@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 
 const Footer = () => {
@@ -303,18 +304,18 @@ const Footer = () => {
             </p>
 
             <div className="flex flex-wrap justify-center gap-6">
-              <a
-                href="#"
+              <Link
+                href="/privacypolicy"
                 className="text-blue-200 hover:text-amber-400 text-sm transition-colors duration-300"
               >
                 Privacy Policy
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="/termsandcondition"
                 className="text-blue-200 hover:text-amber-400 text-sm transition-colors duration-300"
               >
                 Terms of Service
-              </a>
+              </Link>
               <a
                 href="#"
                 className="text-blue-200 hover:text-amber-400 text-sm transition-colors duration-300"
