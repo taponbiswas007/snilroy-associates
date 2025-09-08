@@ -225,7 +225,7 @@ const ValuesPhilosophy = () => {
                         through dedicated representation.
                       </p>
                       <div className="w-16 h-0.5 bg-amber-400 my-4"></div>
-                      <p className="text-amber-400">Adv. Sree Nilmadhob Roy</p>
+                      <p className="text-amber-400">Adv. Sree Nilmadhab Roy</p>
                     </div>
                     <div className="text-amber-400 ml-4 text-2xl">{`"`}</div>
                   </div>

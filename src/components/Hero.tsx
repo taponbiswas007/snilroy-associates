@@ -34,8 +34,10 @@ const Hero = () => {
           {/* Text content */}
           <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              <span className="block text-white">S Nil Roy &</span>
-              <span className="block text-amber-400 mt-2">Associates</span>
+              <span className="block text-white">S Nil</span>
+              <span className="block text-amber-400 mt-2">
+                Roy & Associates
+              </span>
             </h1>
 
             <div
@@ -44,7 +46,7 @@ const Hero = () => {
               }`}
             >
               <h2 className="text-xl md:text-2xl text-blue-300 font-light mb-4">
-                Adv. Sree Nilmadhob Roy
+                Adv. Sree Nilmadhab Roy
               </h2>
               <p className="text-gray-300 text-lg mb-6">{`LLB (Hon's), LLM`}</p>
               <p className="text-gray-400 max-w-md mx-auto md:mx-0">
@@ -76,7 +78,7 @@ const Hero = () => {
                 {
                   <Image
                     src="/owner.webp"
-                    alt="Adv. Sree Nilmadhob Roy"
+                    alt="Adv. Sree Nilmadhab Roy"
                     layout="fill"
                     objectFit="cover"
                   />

@@ -73,7 +73,7 @@ const AboutFirm = () => {
             </p>
 
             <p className="text-gray-300 mb-8 leading-relaxed">
-              {`Led by Adv. Sree Nilmadhob Roy, LLB (Hon's), LLM, our firm brings
+              {`Led by Adv. Sree Nilmadhab Roy, LLB (Hon's), LLM, our firm brings
               together extensive legal knowledge and practical experience to
               deliver effective solutions for our clients' most complex legal
               challenges. We believe in building long-term relationships based

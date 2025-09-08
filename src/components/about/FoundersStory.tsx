@@ -57,7 +57,7 @@ const FoundersStory = () => {
                       {
                         <Image
                           src="/owner.webp"
-                          alt="Adv. Sree Nilmadhob Roy Portrait"
+                          alt="Adv. Sree Nilmadhab Roy Portrait"
                           className="w-28 h-28 rounded-full object-cover"
                           width={112}
                           height={112}
@@ -65,7 +65,7 @@ const FoundersStory = () => {
                       }
                     </div>
                     <h3 className="text-2xl font-serif text-white italic mb-2">
-                      Adv. Sree Nilmadhob Roy
+                      Adv. Sree Nilmadhab Roy
                     </h3>
                     <p className="text-blue-300">{`LLB (Hon's), LLM`}</p>
                     <div className="w-16 h-0.5 bg-amber-400 mx-auto my-4"></div>
@@ -102,7 +102,7 @@ const FoundersStory = () => {
             {/* Story Content */}
             <div className="space-y-6 mb-12">
               <p className="text-xl text-blue-200 leading-relaxed">
-                Adv. Sree Nilmadhob Roy established the firm in 2015 with a
+                Adv. Sree Nilmadhab Roy established the firm in 2015 with a
                 singular vision: to provide exceptional legal services that
                 combine deep expertise with personalized client care.
               </p>
@@ -168,7 +168,7 @@ const FoundersStory = () => {
                   {`"Justice is not just a profession, it's a passion."`}
                 </p>
                 <p className="text-amber-400 text-sm">
-                  - Adv. Sree Nilmadhob Roy
+                  - Adv. Sree Nilmadhab Roy
                 </p>
               </div>
             </div>

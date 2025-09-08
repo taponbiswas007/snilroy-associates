@@ -14,7 +14,7 @@ const TeamExcellence = () => {
 
   const teamMembers = [
     {
-      name: "Adv. Sree Nilmadhob Roy",
+      name: "Adv. Sree Nilmadhab Roy",
       role: "Founding Partner",
       education: "LLB (Hon's), LLM",
       experience: "12+ Years",
