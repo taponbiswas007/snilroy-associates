@@ -104,18 +104,6 @@ const ServicesHero = () => {
               </div>
             </div>
           </div>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6">
-            <button className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-light text-white bg-amber-500 rounded-lg transition-all duration-500 overflow-hidden hover:bg-amber-600 transform hover:scale-105">
-              <span className="relative z-10">Explore Our Services</span>
-              <div className="absolute inset-0 bg-amber-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-            </button>
-            <button className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-light text-white bg-transparent border border-amber-500/30 rounded-lg transition-all duration-500 overflow-hidden hover:border-amber-500">
-              <span className="relative z-10">Schedule Consultation</span>
-              <div className="absolute inset-0 bg-amber-500/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-            </button>
-          </div>
         </div>
       </div>
 
