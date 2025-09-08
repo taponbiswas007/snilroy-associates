@@ -2,39 +2,21 @@ import Link from "next/link";
 import { useState } from "react";
 
 const Footer = () => {
-  const [email, setEmail] = useState("");
-  const [isSubscribed, setIsSubscribed] = useState(false);
-
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email) {
-      // In a real application, you would handle newsletter subscription here
-      console.log("Subscribed with email:", email);
-      setIsSubscribed(true);
-      setEmail("");
-
-      // Reset after 3 seconds
-      setTimeout(() => {
-        setIsSubscribed(false);
-      }, 3000);
-    }
-  };
-
   const quickLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About Us", href: "#about" },
-    { name: "Practice Areas", href: "#practice-areas" },
-    { name: "Testimonials", href: "#testimonials" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about" },
+    { name: "Practice Areas", href: "/practice-areas" },
+    { name: "Testimonials", href: "/testimonials" },
+    { name: "Contact", href: "/contact" },
   ];
 
   const practiceAreas = [
-    { name: "Corporate Law", href: "#corporate" },
-    { name: "Criminal Defense", href: "#criminal" },
-    { name: "Family Law", href: "#family" },
-    { name: "Real Estate Law", href: "#real-estate" },
-    { name: "Intellectual Property", href: "#ip" },
-    { name: "Civil Litigation", href: "#civil" },
+    { name: "Corporate Law", href: "/corporate" },
+    { name: "Criminal Defense", href: "/criminal" },
+    { name: "Family Law", href: "/family" },
+    { name: "Real Estate Law", href: "/real-estate" },
+    { name: "Intellectual Property", href: "/ip" },
+    { name: "Civil Litigation", href: "/civil" },
   ];
 
   const contactInfo = [
@@ -61,7 +43,7 @@ const Footer = () => {
           ></path>
         </svg>
       ),
-      text: "123 Legal Avenue, Kolkata, West Bengal 700001",
+      text: "  23.23/1, Court House Street, Underground Room No. 3,  Dhaka Metropolitan BAR Association, Dhaka-1100, Bangladesh",
     },
     {
       icon: (
@@ -80,7 +62,7 @@ const Footer = () => {
           ></path>
         </svg>
       ),
-      text: "+91 98765 43210",
+      text: "+88 01740 106009",
     },
     {
       icon: (
@@ -99,7 +81,7 @@ const Footer = () => {
           ></path>
         </svg>
       ),
-      text: "contact@snilroyassociates.com",
+      text: "advocatesnilroy@gmail.com",
     },
   ];
 
@@ -188,7 +170,7 @@ const Footer = () => {
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-blue-200 hover:text-amber-400 transition-colors duration-300 flex items-center"
                   >
@@ -207,7 +189,7 @@ const Footer = () => {
                       ></path>
                     </svg>
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -221,7 +203,7 @@ const Footer = () => {
             <ul className="space-y-3">
               {practiceAreas.map((area, index) => (
                 <li key={index}>
-                  <a
+                  <Link
                     href={area.href}
                     className="text-blue-200 hover:text-amber-400 transition-colors duration-300 flex items-center"
                   >
@@ -240,7 +222,7 @@ const Footer = () => {
                       ></path>
                     </svg>
                     {area.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -262,35 +244,6 @@ const Footer = () => {
                   </li>
                 ))}
               </ul>
-            </div>
-
-            <div>
-              <h4 className="text-white font-medium mb-3">Newsletter</h4>
-              {isSubscribed ? (
-                <div className="bg-amber-500 text-white p-3 rounded-lg text-sm">
-                  Thank you for subscribing to our newsletter!
-                </div>
-              ) : (
-                <form
-                  onSubmit={handleSubscribe}
-                  className="flex flex-col space-y-3"
-                >
-                  <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Your email address"
-                    className="px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent text-sm"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    className="bg-amber-500 hover:bg-amber-600 text-gray-900 font-semibold py-2 px-4 rounded-lg transition-colors duration-300 text-sm"
-                  >
-                    Subscribe
-                  </button>
-                </form>
-              )}
             </div>
           </div>
         </div>
@@ -316,12 +269,6 @@ const Footer = () => {
               >
                 Terms of Service
               </Link>
-              <a
-                href="#"
-                className="text-blue-200 hover:text-amber-400 text-sm transition-colors duration-300"
-              >
-                Disclaimer
-              </a>
             </div>
           </div>
         </div>

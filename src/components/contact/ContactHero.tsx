@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import ContactForm from "../ContactForm";
 
 const ContactHero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,13 +28,13 @@ const ContactHero = () => {
       icon: "📞",
       title: "Phone Consultation",
       description: "Speak directly with our legal experts",
-      action: "+91 98765 43210",
+      action: "+88 01740 106009",
     },
     {
       icon: "✉️",
       title: "Email Us",
       description: "Send us your questions and documents",
-      action: "contact@snilroy.com",
+      action: "advocatesnilroy@gmail.com",
     },
     {
       icon: "💬",
@@ -123,74 +124,7 @@ const ContactHero = () => {
 
           {/* Right Content - Contact Form */}
           <div className="lg:w-1/2">
-            <div className="bg-gradient-to-br from-gray-900 to-black rounded-2xl p-8 border border-amber-500/20 shadow-2xl shadow-amber-500/10">
-              <h2 className="text-2xl md:text-3xl font-light text-white mb-8 text-center">
-                Send us a <span className="text-amber-400">Message</span>
-              </h2>
-
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="Full Name"
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="email"
-                      placeholder="Email Address"
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <input
-                    type="tel"
-                    placeholder="Phone Number"
-                    className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <select className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors">
-                    <option value="">Select Area of Interest</option>
-                    <option value="corporate">Corporate Law</option>
-                    <option value="criminal">Criminal Defense</option>
-                    <option value="family">Family Law</option>
-                    <option value="realestate">Real Estate Law</option>
-                    <option value="ip">Intellectual Property</option>
-                    <option value="civil">Civil Litigation</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-
-                <div>
-                  <textarea
-                    placeholder="Tell us about your legal needs..."
-                    rows={4}
-                    className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
-                    required
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-amber-500 hover:bg-amber-600 text-gray-900 font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-amber-500/30"
-                >
-                  Send Message
-                </button>
-
-                <p className="text-gray-400 text-sm text-center">
-                  We'll respond within 2 hours during business days
-                </p>
-              </form>
-            </div>
+            <ContactForm />
           </div>
         </div>
       </div>

@@ -389,8 +389,11 @@ const PrivacyPolicy = () => {
                             d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                           ></path>
                         </svg>
-                        <span>
-                          123 Legal Avenue, Kolkata, West Bengal 700001
+                        <span className="text-blue-200 leading-relaxed">
+                          23.23/1, Court House Street, <br />
+                          Underground Room No. 3 <br />
+                          Dhaka Metropolitan BAR Association <br />
+                          Dhaka-1100, Bangladesh
                         </span>
                       </div>
                     </div>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import ContactForm from "./ContactForm";
 
 const ConsultationCTA = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,22 +29,31 @@ const ConsultationCTA = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real application, you would handle form submission here
-    console.log("Form submitted:", formData);
-    setIsSubmitted(true);
 
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        message: "",
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
       });
-    }, 3000);
+
+      const data = await res.json();
+      console.log("API response:", res.status, data);
+
+      if (res.ok) {
+        setIsSubmitted(true);
+        setTimeout(() => {
+          setIsSubmitted(false);
+          setFormData({ name: "", email: "", phone: "", message: "" });
+        }, 3000);
+      } else {
+        console.error("Submission failed:", data.error);
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
   };
 
   return (
@@ -172,7 +182,7 @@ const ConsultationCTA = () => {
                       d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                     ></path>
                   </svg>
-                  <span className="text-blue-200">+91 98765 43210</span>
+                  <span className="text-blue-200">+88 01740 106009</span>
                 </div>
                 <div className="flex items-center">
                   <svg
@@ -190,10 +200,10 @@ const ConsultationCTA = () => {
                     ></path>
                   </svg>
                   <span className="text-blue-200">
-                    contact@snilroyassociates.com
+                    advocatesnilroy@gmail.com
                   </span>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-start">
                   <svg
                     className="w-5 h-5 text-amber-400 mr-3"
                     fill="none"
@@ -214,8 +224,11 @@ const ConsultationCTA = () => {
                       d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                     ></path>
                   </svg>
-                  <span className="text-blue-200">
-                    123 Legal Avenue, Kolkata, West Bengal
+                  <span className="text-blue-200 leading-relaxed">
+                    23.23/1, Court House Street, <br />
+                    Underground Room No. 3 <br />
+                    Dhaka Metropolitan BAR Association <br />
+                    Dhaka-1100, Bangladesh
                   </span>
                 </div>
               </div>
@@ -224,119 +237,7 @@ const ConsultationCTA = () => {
 
           {/* Form */}
           <div className="lg:w-1/2">
-            <div className="bg-gray-800 rounded-xl p-8 border border-gray-700 shadow-lg">
-              <h3 className="text-2xl font-bold text-white mb-6 text-center">
-                Get In Touch
-              </h3>
-
-              {isSubmitted ? (
-                <div className="text-center py-8">
-                  <div className="bg-amber-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg
-                      className="w-8 h-8 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M5 13l4 4L19 7"
-                      ></path>
-                    </svg>
-                  </div>
-                  <h4 className="text-xl font-semibold text-white mb-2">
-                    Thank You!
-                  </h4>
-                  <p className="text-blue-200">
-                    {`  We've received your message and will contact you shortly.`}
-                  </p>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div>
-                    <label htmlFor="name" className="block text-blue-200 mb-2">
-                      Full Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
-                      placeholder="Enter your full name"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="email" className="block text-blue-200 mb-2">
-                      Email Address
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
-                      placeholder="Enter your email address"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="phone" className="block text-blue-200 mb-2">
-                      Phone Number
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
-                      placeholder="Enter your phone number"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="message"
-                      className="block text-blue-200 mb-2"
-                    >
-                      How Can We Help?
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      required
-                      rows={4}
-                      className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
-                      placeholder="Briefly describe your legal needs"
-                    ></textarea>
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="w-full bg-amber-500 hover:bg-amber-600 text-gray-900 font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-amber-500/30"
-                  >
-                    Schedule Free Consultation
-                  </button>
-
-                  <p className="text-gray-400 text-sm text-center">
-                    By submitting this form, you agree to our Privacy Policy and
-                    consent to be contacted by our firm.
-                  </p>
-                </form>
-              )}
-            </div>
+            <ContactForm />
           </div>
         </div>
       </div>

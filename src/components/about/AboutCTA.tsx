@@ -275,7 +275,7 @@ const AboutCTA = () => {
                   ></path>
                 </svg>
               </div>
-              <span className="text-blue-200">+91 98765 43210</span>
+              <span className="text-blue-200">+88 01740 106009</span>
             </div>
 
             <div className="flex items-center">
@@ -295,9 +295,7 @@ const AboutCTA = () => {
                   ></path>
                 </svg>
               </div>
-              <span className="text-blue-200">
-                contact@snilroyassociates.com
-              </span>
+              <span className="text-blue-200">advocatesnilroy@gmail.com</span>
             </div>
           </div>
         </div>

@@ -100,7 +100,7 @@ const ClientTestimonials = () => {
 
               {/* Content */}
               <p className="text-gray-300 text-lg italic mb-8 leading-relaxed">
-                {` "{testimonial.content}"`}
+                {` "${testimonial.content}"`}
               </p>
 
               {/* Client Info */}
