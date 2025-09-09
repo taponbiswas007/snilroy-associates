@@ -1,6 +1,12 @@
 import { useEffect, useState } from "react";
 import ContactForm from "../ContactForm";
 
+const welcomeMessages = [
+  "Let's discuss your legal needs",
+  "Get expert legal advice today",
+  "Your solution starts with a conversation",
+  "We're here to help you succeed",
+];
 const ContactHero = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [currentMessage, setCurrentMessage] = useState(0);
@@ -15,13 +21,6 @@ const ContactHero = () => {
 
     return () => clearInterval(interval);
   }, []);
-
-  const welcomeMessages = [
-    "Let's discuss your legal needs",
-    "Get expert legal advice today",
-    "Your solution starts with a conversation",
-    "We're here to help you succeed",
-  ];
 
   const contactMethods = [
     {
@@ -71,7 +70,7 @@ const ContactHero = () => {
 
             {/* Main heading */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-light mb-6">
-              <span className="text-white">Let's</span>
+              <span className="text-white">{`Let's`}</span>
               <span className="block mt-3">
                 <span className="text-amber-400 font-serif italic">
                   Connect

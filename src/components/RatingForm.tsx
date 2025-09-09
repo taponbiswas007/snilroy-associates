@@ -290,7 +290,7 @@ export default function RatingForm() {
                         </div>
                         {r.text && (
                           <p className="text-blue-200 text-sm mt-2 line-clamp-3">
-                            "{r.text}"
+                            {`"${r.text}"`}
                           </p>
                         )}
                       </div>

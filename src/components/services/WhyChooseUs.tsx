@@ -282,10 +282,10 @@ const WhyChooseUs = () => {
                 </div>
               </div>
               <p className="text-blue-200 italic leading-relaxed">
-                "S Nil Roy & Associates provided exceptional legal guidance
+                {`"S Nil Roy & Associates provided exceptional legal guidance
                 during our company's merger. Their expertise and personalized
                 approach made the complex process seamless. Truly outstanding
-                service!"
+                service!"`}
               </p>
             </div>
 

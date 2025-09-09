@@ -1,5 +1,22 @@
 import { useEffect, useState } from "react";
 
+// ✅ Move static arrays outside the component
+const practiceAreas = [
+  "Corporate Law",
+  "Criminal Defense",
+  "Family Law",
+  "Real Estate Law",
+  "Intellectual Property",
+  "Civil Litigation",
+];
+
+const stats = [
+  { number: "500+", label: "Cases Handled" },
+  { number: "98%", label: "Success Rate" },
+  { number: "8+", label: "Practice Areas" },
+  { number: "12+", label: "Years Experience" },
+];
+
 const PracticeAreasHero = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [currentPractice, setCurrentPractice] = useState(0);
@@ -13,23 +30,7 @@ const PracticeAreasHero = () => {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, []);
-
-  const practiceAreas = [
-    "Corporate Law",
-    "Criminal Defense",
-    "Family Law",
-    "Real Estate Law",
-    "Intellectual Property",
-    "Civil Litigation",
-  ];
-
-  const stats = [
-    { number: "500+", label: "Cases Handled" },
-    { number: "98%", label: "Success Rate" },
-    { number: "8+", label: "Practice Areas" },
-    { number: "12+", label: "Years Experience" },
-  ];
+  }, []); // ✅ safe to keep empty now
 
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-900 overflow-hidden pt-20">
@@ -93,18 +94,6 @@ const PracticeAreasHero = () => {
                 </div>
               </div>
             ))}
-          </div>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6">
-            <button className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-light text-white bg-amber-500 rounded-lg transition-all duration-500 overflow-hidden hover:bg-amber-600 transform hover:scale-105">
-              <span className="relative z-10">Explore Our Services</span>
-              <div className="absolute inset-0 bg-amber-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-            </button>
-            <button className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-light text-white bg-transparent border border-amber-500/30 rounded-lg transition-all duration-500 overflow-hidden hover:border-amber-500">
-              <span className="relative z-10">Free Consultation</span>
-              <div className="absolute inset-0 bg-amber-500/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-            </button>
           </div>
         </div>
       </div>

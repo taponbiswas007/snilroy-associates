@@ -197,9 +197,9 @@ const TestimonialsGrid = () => {
             </span>
           </h2>
           <p className="text-xl text-blue-200 max-w-2xl mx-auto leading-relaxed">
-            Read what our clients have to say about their experiences with our
+            {`Read what our clients have to say about their experiences with our
             legal services and how we've helped them achieve successful
-            outcomes.
+            outcomes.`}
           </p>
         </div>
 
@@ -282,7 +282,7 @@ const TestimonialsGrid = () => {
 
               {/* Testimonial Text */}
               <p className="text-blue-200 text-sm mb-6 leading-relaxed line-clamp-4 group-hover:line-clamp-none transition-all duration-300">
-                "{testimonial.text}"
+                {`"${testimonial.text}"`}
               </p>
 
               {/* Case Details */}

@@ -1,5 +1,12 @@
 import { useEffect, useState } from "react";
 
+const teamHighlights = [
+  "12+ Years Average Experience",
+  "98% Client Satisfaction",
+  "500+ Cases Handled",
+  "Multiple Legal Specializations",
+];
+
 const TeamHero = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [currentHighlight, setCurrentHighlight] = useState(0);
@@ -14,13 +21,6 @@ const TeamHero = () => {
 
     return () => clearInterval(interval);
   }, []);
-
-  const teamHighlights = [
-    "12+ Years Average Experience",
-    "98% Client Satisfaction",
-    "500+ Cases Handled",
-    "Multiple Legal Specializations",
-  ];
 
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-900 overflow-hidden pt-20">
@@ -105,18 +105,6 @@ const TeamHero = () => {
                 Client Support
               </div>
             </div>
-          </div>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6">
-            <button className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-light text-white bg-amber-500 rounded-lg transition-all duration-500 overflow-hidden hover:bg-amber-600 transform hover:scale-105">
-              <span className="relative z-10">Meet Our Attorneys</span>
-              <div className="absolute inset-0 bg-amber-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-            </button>
-            <button className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-light text-white bg-transparent border border-amber-500/30 rounded-lg transition-all duration-500 overflow-hidden hover:border-amber-500">
-              <span className="relative z-10">Schedule Consultation</span>
-              <div className="absolute inset-0 bg-amber-500/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-            </button>
           </div>
         </div>
       </div>

@@ -103,10 +103,11 @@ const TermsAndConditions = () => {
                     agree to be bound by these terms.
                   </p>
                   <p>
-                    S Nil Roy & Associates ("we," "us," or "our") is a law firm
+                    {`  S Nil Roy & Associates ("we," "us," or "our") is a law firm
                     providing legal services in various practice areas. Our
-                    principal office is located at 123 Legal Avenue, Kolkata,
-                    West Bengal.
+                    principal office is located at 23,23/1, Court House Street,
+                    Underground Room No. 3, Dhaka Metropolitan BAR Association,
+                    Dhaka-1100, Bangladesh.`}
                   </p>
                   <p>
                     These terms constitute a legal agreement between you and S
@@ -136,8 +137,9 @@ const TermsAndConditions = () => {
                   </ul>
                   <p>
                     All legal services are provided by qualified advocates
-                    practicing in India. The specific scope of services will be
-                    detailed in a separate engagement letter for each matter.
+                    practicing in Bangladesh. The specific scope of services
+                    will be detailed in a separate engagement letter for each
+                    matter.
                   </p>
                 </div>
               </section>

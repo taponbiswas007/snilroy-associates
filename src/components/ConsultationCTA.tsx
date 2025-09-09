@@ -3,58 +3,12 @@ import ContactForm from "./ContactForm";
 
 const ConsultationCTA = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true);
     }, 300);
-
     return () => clearTimeout(timer);
   }, []);
-
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await res.json();
-      console.log("API response:", res.status, data);
-
-      if (res.ok) {
-        setIsSubmitted(true);
-        setTimeout(() => {
-          setIsSubmitted(false);
-          setFormData({ name: "", email: "", phone: "", message: "" });
-        }, 3000);
-      } else {
-        console.error("Submission failed:", data.error);
-      }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-    }
-  };
 
   return (
     <section className="py-16 bg-gradient-to-br from-blue-900 to-black px-4 relative overflow-hidden">

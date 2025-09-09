@@ -110,17 +110,17 @@ const PrivacyPolicy = () => {
                 </h2>
                 <div className="space-y-4 text-blue-200 leading-relaxed">
                   <p>
-                    At S Nil Roy & Associates ("we," "us," or "our"), we are
+                    {`At S Nil Roy & Associates ("we," "us," or "our"), we are
                     committed to protecting your privacy and personal
                     information. This Privacy Policy explains how we collect,
                     use, disclose, and safeguard your information when you use
-                    our legal services or visit our website.
+                    our legal services or visit our website.`}
                   </p>
                   <p>
                     We comply with the Information Technology Act, 2000 and
-                    other applicable data protection laws in India. By using our
-                    services, you consent to the practices described in this
-                    policy.
+                    other applicable data protection laws in Bangladesh. By
+                    using our services, you consent to the practices described
+                    in this policy.
                   </p>
                   <div className="bg-amber-500/5 border-l-4 border-amber-500 p-4 rounded">
                     <p className="text-amber-200 text-sm">
@@ -292,7 +292,7 @@ const PrivacyPolicy = () => {
               {/* Children's Privacy */}
               <section id="children-privacy" className="mb-12">
                 <h2 className="text-2xl font-light text-amber-400 mb-6">
-                  8. Children's Privacy
+                  {`8. Children's Privacy`}
                 </h2>
                 <div className="space-y-4 text-blue-200 leading-relaxed">
                   <p>

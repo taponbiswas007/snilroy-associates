@@ -3,7 +3,6 @@ import ContactForm from "../ContactForm";
 
 const AboutCTA = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -12,12 +11,6 @@ const AboutCTA = () => {
 
     return () => clearTimeout(timer);
   }, []);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitted(true);
-    setTimeout(() => setIsSubmitted(false), 3000);
-  };
 
   return (
     <section className="py-24 bg-gradient-to-br from-blue-900 via-black to-blue-900 px-4 relative overflow-hidden">
