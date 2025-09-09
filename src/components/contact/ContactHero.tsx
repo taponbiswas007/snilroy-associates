@@ -100,7 +100,7 @@ const ContactHero = () => {
               {contactMethods.map((method, index) => (
                 <div
                   key={index}
-                  className="flex items-center p-4 bg-gray-800/30 rounded-xl border border-amber-500/10 hover:border-amber-500/30 transition-all duration-300 group"
+                  className="flex flex-col md:flex-row items-center p-4 bg-gray-800/30 rounded-xl border border-amber-500/10 hover:border-amber-500/30 transition-all duration-300 group"
                 >
                   <div className="text-2xl mr-4 group-hover:scale-110 transition-transform duration-300">
                     {method.icon}
