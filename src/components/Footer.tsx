@@ -43,7 +43,7 @@ const Footer = () => {
           ></path>
         </svg>
       ),
-      text: "  23.23/1, Court House Street, Underground Room No. 3,  Dhaka Metropolitan BAR Association, Dhaka-1100, Bangladesh",
+      text: "23,23/1, Court House Street, Underground Room No. 3,  Dhaka Metropolitan BAR Association, Dhaka-1100, Bangladesh",
     },
     {
       icon: (
