@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -60,12 +61,18 @@ const Hero = () => {
                 isTextVisible ? "opacity-100" : "opacity-0"
               }`}
             >
-              <button className="bg-amber-500 hover:bg-amber-600 text-gray-900 font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-amber-500/30">
+              <Link
+                className="bg-amber-500 hover:bg-amber-600 text-gray-900 font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-amber-500/30"
+                href={"/contact"}
+              >
                 Schedule Consultation
-              </button>
-              <button className="border border-blue-400 hover:border-amber-400 text-blue-300 hover:text-amber-300 font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
+              </Link>
+              <Link
+                href={"/practicearea"}
+                className="border border-blue-400 hover:border-amber-400 text-blue-300 hover:text-amber-300 font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105"
+              >
                 View Practice Areas
-              </button>
+              </Link>
             </div>
           </div>
 

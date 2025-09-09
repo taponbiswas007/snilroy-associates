@@ -15,8 +15,8 @@ const TeamMembersGrid = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "Adv. Sree Nilmadhob Roy",
-      role: "Founding Partner",
+      name: "Adv. Sree Nilmadhab Roy",
+      role: "Founder",
       education: "LLB (Hon's), LLM",
       experience: "12+ Years",
       expertise: ["Corporate Law", "Civil Litigation", "Intellectual Property"],

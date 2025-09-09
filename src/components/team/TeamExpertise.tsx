@@ -18,7 +18,7 @@ const TeamExpertise = () => {
       icon: "🏢",
       description:
         "Comprehensive legal services for businesses including formation, compliance, contracts, and transactions.",
-      teamMembers: ["Adv. Sree Nilmadhob Roy", "Adv. Priya Sharma"],
+      teamMembers: ["Adv. Sree Nilmadhab Roy", "Adv. Priya Sharma"],
       stats: { cases: "120+", success: "95%", experience: "20+ Years" },
       services: [
         "Business Formation & Structuring",
@@ -98,7 +98,7 @@ const TeamExpertise = () => {
       icon: "🔍",
       description:
         "Representation in civil disputes and litigation matters across various domains.",
-      teamMembers: ["Adv. Sree Nilmadhob Roy", "Adv. Arjun Mehta"],
+      teamMembers: ["Adv. Sree Nilmadhab Roy", "Adv. Arjun Mehta"],
       stats: { cases: "180+", success: "93%", experience: "15+ Years" },
       services: [
         "Contract Disputes",

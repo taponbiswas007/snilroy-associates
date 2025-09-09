@@ -14,7 +14,7 @@ const Footer = () => {
     { name: "Corporate Law", href: "/corporate" },
     { name: "Criminal Defense", href: "/criminal" },
     { name: "Family Law", href: "/family" },
-    { name: "Real Estate Law", href: "/real-estate" },
+    { name: "Income Tex", href: "/income-tex" },
     { name: "Intellectual Property", href: "/ip" },
     { name: "Civil Litigation", href: "/civil" },
   ];

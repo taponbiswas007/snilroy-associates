@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import ContactForm from "../ContactForm";
 
 const AboutCTA = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -161,94 +162,8 @@ const AboutCTA = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-gradient-to-br from-gray-900 to-black rounded-2xl p-8 border border-amber-500/20 relative overflow-hidden">
-            <div className="relative z-10">
-              <h3 className="text-2xl font-light text-white mb-6 text-center">
-                Schedule Your{" "}
-                <span className="text-amber-400">Consultation</span>
-              </h3>
-
-              {isSubmitted ? (
-                <div className="text-center py-12">
-                  <div className="bg-amber-500/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 border border-amber-500/20">
-                    <svg
-                      className="w-8 h-8 text-amber-400"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M5 13l4 4L19 7"
-                      ></path>
-                    </svg>
-                  </div>
-                  <h4 className="text-xl font-semibold text-white mb-2">
-                    Thank You!
-                  </h4>
-                  <p className="text-blue-200">
-                    {`We'll contact you within 24 hours to schedule your
-                    consultation.`}
-                  </p>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="Full Name"
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
-                      required
-                    />
-                  </div>
-
-                  <div>
-                    <input
-                      type="email"
-                      placeholder="Email Address"
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
-                      required
-                    />
-                  </div>
-
-                  <div>
-                    <input
-                      type="tel"
-                      placeholder="Phone Number"
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
-                      required
-                    />
-                  </div>
-
-                  <div>
-                    <select className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors">
-                      <option value="">Select Area of Interest</option>
-                      <option value="corporate">Corporate Law</option>
-                      <option value="criminal">Criminal Defense</option>
-                      <option value="family">Family Law</option>
-                      <option value="realestate">Real Estate Law</option>
-                      <option value="ip">Intellectual Property</option>
-                      <option value="civil">Civil Litigation</option>
-                    </select>
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="w-full bg-amber-500 hover:bg-amber-600 text-gray-900 font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-amber-500/30"
-                  >
-                    Request Free Consultation
-                  </button>
-
-                  <p className="text-gray-400 text-sm text-center">
-                    By submitting, you agree to our Privacy Policy and consent
-                    to be contacted.
-                  </p>
-                </form>
-              )}
-            </div>
+          <div className="bg-gradient-to-br from-gray-900 to-black rounded-2xl p-2 border border-amber-500/20 relative overflow-hidden">
+            <ContactForm />
           </div>
         </div>
 

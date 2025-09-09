@@ -157,7 +157,7 @@ const ContactForm = () => {
 
               <button
                 type="submit"
-                className="w-full bg-amber-500 hover:bg-amber-600 text-gray-900 font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-amber-500/30"
+                className="w-full md:text-[24px] text-[14px] bg-amber-500 hover:bg-amber-600 text-gray-900 font-semibold py-3 px-2 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-amber-500/30"
               >
                 Schedule Free Consultation
               </button>

@@ -15,29 +15,29 @@ const ClientTestimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Rajesh Mehta",
+      name: "Tapon Sarker",
       role: "Business Owner",
       content:
         "Adv. Roy provided exceptional legal guidance during my company's merger. His expertise in corporate law saved us both time and resources. I highly recommend S Nil Roy & Associates for any business legal matters.",
-      avatar: "RM",
+      avatar: "TS",
       rating: 5,
     },
     {
       id: 2,
-      name: "Priya Sharma",
+      name: "Abul Kalam",
       role: "Real Estate Investor",
       content:
         "I was facing a complex property dispute that seemed impossible to resolve. The team at S Nil Roy & Associates navigated the legal complexities with skill and determination. We achieved a favorable outcome I didn't think was possible.",
-      avatar: "PS",
+      avatar: "AK",
       rating: 5,
     },
     {
       id: 3,
-      name: "Anil Kapoor",
+      name: "Anika Rahman",
       role: "Entrepreneur",
       content:
         "Their intellectual property protection services are outstanding. They helped me secure patents for my innovations and provided ongoing counsel as my business grew. Responsive, professional, and truly caring about their clients.",
-      avatar: "AK",
+      avatar: "AR",
       rating: 5,
     },
   ];

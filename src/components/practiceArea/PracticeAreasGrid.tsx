@@ -30,7 +30,7 @@ const PracticeAreasGrid = () => {
       ],
       stats: { cases: "120+", success: "95%", experience: "20+ Years" },
       category: "business",
-      team: ["Adv. Sree Nilmadhob Roy", "Adv. Priya Sharma"],
+      team: ["Adv. Sree Nilmadhab Roy", "Adv. Priya Sharma"],
     },
     {
       id: 2,
@@ -120,7 +120,7 @@ const PracticeAreasGrid = () => {
       ],
       stats: { cases: "180+", success: "93%", experience: "15+ Years" },
       category: "litigation",
-      team: ["Adv. Sree Nilmadhob Roy", "Adv. Arjun Mehta"],
+      team: ["Adv. Sree Nilmadhab Roy", "Adv. Arjun Mehta"],
     },
   ];
 

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 
 const PracticeAreas = () => {
@@ -99,9 +100,12 @@ const PracticeAreas = () => {
             {` Don't see your specific legal need listed? Contact us to discuss how
             we can help.`}
           </p>
-          <button className="bg-amber-500 hover:bg-amber-600 text-gray-900 font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-amber-500/30">
+          <Link
+            href={"/contact"}
+            className="bg-amber-500 hover:bg-amber-600 text-gray-900 font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-amber-500/30"
+          >
             Schedule a Consultation
-          </button>
+          </Link>
         </div>
       </div>
     </section>

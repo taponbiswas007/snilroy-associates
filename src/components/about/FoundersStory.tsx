@@ -13,22 +13,22 @@ const FoundersStory = () => {
 
   const milestones = [
     {
-      year: "2010",
+      year: "2015",
       title: "LLB (Honours)",
       description: "Graduated with honors in Law",
     },
     {
-      year: "2014",
+      year: "2021",
       title: "LLM Completed",
       description: "Master of Laws degree earned",
     },
     {
-      year: "2015",
+      year: "2018",
       title: "Firm Established",
       description: "Founded S Nil Roy & Associates",
     },
     {
-      year: "2023",
+      year: "2024",
       title: "500+ Cases",
       description: "Successfully handled cases",
     },
@@ -69,7 +69,7 @@ const FoundersStory = () => {
                     </h3>
                     <p className="text-blue-300">{`LLB (Hon's), LLM`}</p>
                     <div className="w-16 h-0.5 bg-amber-400 mx-auto my-4"></div>
-                    <p className="text-amber-400 text-sm">Founding Partner</p>
+                    <p className="text-amber-400 text-sm">Founder</p>
                   </div>
                 </div>
               </div>
@@ -102,7 +102,7 @@ const FoundersStory = () => {
             {/* Story Content */}
             <div className="space-y-6 mb-12">
               <p className="text-xl text-blue-200 leading-relaxed">
-                Adv. Sree Nilmadhab Roy established the firm in 2015 with a
+                Adv. Sree Nilmadhab Roy established the firm in 2018 with a
                 singular vision: to provide exceptional legal services that
                 combine deep expertise with personalized client care.
               </p>
